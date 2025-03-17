@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMSI Tutoring & Academic Support</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="parallax">
     <header>
-            <a href="#maincontent">Skip to Main Content</a>
+        <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
             <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
-            <ul>
+            <ul class="top-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tutoring.html">Tutoring</a></li>
                 <li><a href="CAPS.html">CAPS</a></li>
-                <li><a href="food.html">Food Pantry</a></li>
+                <li><a href="food.html">Pantry</a></li>
             </ul>
         </nav>
         <h1>UMSI Tutoring & Academic Support</h1>
@@ -39,13 +43,18 @@
         <img src = "images/tutor_using_laptop.jpg" alt="A group of students are speaking with a professor who is using his laptop.">
         <p>In partnership with our UMSI faculty, the UMSI Peer Tutoring program is an opportunity for UMSI students and students taking UMSI courses to engage with peer tutors and receive assistance and support in UMSI courses.</p><br>
         <h3>Specialty Tutoring</h3>
-        <p><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring">Programming Tutoring</a></p><p><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring">Math Tutoring</a></p>
-        <section>
+        <div class="tutoring-grid">
+        <a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring"><button>Programming Tutoring</button></a>
+        <a href="https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring"><button>Math Tutoring</button></a>
+        </div>
+        </section>
+    <section>
         <section><h2>Additional Academic Resources</h2></section>
         <h3>Peer-to-Peer Tutor Directory</h3>
         <p>If you'd like to work with a private tutor rather than a UMSI-affiliated tutor, we have compiled a <a href="https://sites.google.com/umich.edu/umsitutoring/additional-academic-support/peer-to-peer-tutor-directory">list for your convenience.</a></p>
 
         <h2>FAQs</h2>
+        <div class="tutoring-faqs">
         <details>
             <summary>How can I schedule a tutoring appointment?</summary>
             <p>Students can schedule a tutoring appointment with our available UMSI Peer Tutors or UMSI MADS Peer Tutors via their Google Calendar appointment link. Links can be found under the <a href="https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring">"Math Peer Tutoring"</a> or <a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring">"Programming Peer Tutoring"</a> page. Please note that on both the Math and Programming Peer Tutor pages there are peer tutors available for SI and SIADS courses. </p>
@@ -53,7 +62,7 @@
         <details>
             <summary>Am I limited on how many appointments I can make with a UMSI Peer Tutor?</summary>
             <p>
-                No. Students can schedule multiple appointments with UMSI Peer Tutors. However, if you are finding you need additional support, we encourage you to connect with the UMSI Academic Success Team at umsi.academicsuccess@umich.edu to discuss additional resources. 
+                No. Students can schedule multiple appointments with UMSI Peer Tutors. However, if you are finding you need additional support, we encourage you to connect with the UMSI Academic Success Team at <a href="umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a> to discuss additional resources. 
             </p>
         </details>
         <details>
@@ -87,7 +96,8 @@
             <p>
                 The UMSI Peer Tutoring Program is available to students enrolled in UMSI courses and is free of charge to students. UMSI hires these Peer Tutors and they work with our faculty and UMSI Academic Success Team to support students. The Peer-to-Peer Tutor Directory was created in an effort to help connect students looking to offer broad tutoring and a fee may be associated with these services, determined by the tutor. UMSI does not oversee the tutors in the Peer-to-Peer Tutor Directory but simply maintains the Peer-to-Peer Tutor Directory each term. 
             </p>
-        </details></section>
+        </details>
+    </div></section>
         <section>
             <h2>Contact</h2>
             <p>For more information regarding student support and tutoring, please email <a href= "mailto:umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a>.</p>

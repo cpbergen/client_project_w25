@@ -1,0 +1,272 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 5px;
+
+}
+
+.parallax {
+    background-image: url("../images/UMSI_Campus_Winter_ArtSculptureandUnion_01_Mobile.png");
+    background-size: cover;
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+    backdrop-filter: grayscale(40%) blur(20px) brightness(145%);
+    background-attachment: fixed;
+}
+
+main {
+    margin: 0% 5% 5% 5%;
+}
+
+
+p {
+    font-size: medium;
+    margin-bottom: 1em;
+    line-height: 1.5rem;
+}
+
+
+h1 {
+    display: block;
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 1em 0em 2em 0em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight:250;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+
+summary {
+    margin-bottom: .5em;
+}
+
+img {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    top: -40px;
+    position: absolute;
+  }
+
+  .skip a:focus {
+    position: absolute;
+    top: 20px;
+  }
+
+  *:focus {
+    border: solid 2px white;
+  }
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #00274C;
+    height: 2em;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.top-bar li {
+  margin-bottom: 0px;
+
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+
+}
+
+.top-bar a:hover {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+.urgent-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    position: sticky;
+    top: 1em;
+    margin: 2em;
+    background-color: white;
+}
+
+.resource-grid {
+ display: grid;
+ grid-template-columns: 50% 50%;
+ column-gap: 10%;
+    row-gap: 1em;
+ align-items: start;}
+
+.resource-grid div {
+padding-bottom: 0px; 
+}
+
+.resource-grid p {
+margin-bottom: 0px;}
+
+.resource-grid div >p {
+    height: 50%;
+    overflow: auto;
+}
+
+.resource-grid div:nth-child(2) {
+    grid-column: 1/-1;
+    margin: 0px;
+    padding:0px
+}
+
+.resource-grid div:last-child {
+    grid-column: 1/-1;
+
+}
+
+#resource-grid-header{
+    grid-column: 1/span 2;
+    justify-items: center;
+    margin-bottom: 0px;
+}
+
+header > img {
+width: 100%;
+}
+
+.hero-image {
+display: block;
+align-self: center;
+width: 100%;
+height: auto;
+margin-right: auto;
+margin-left: auto;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #00274c;
+    color: white;
+    height: 3em;
+    padding: 1em;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    padding-top: 1em; }
+
+footer a {
+    color: yellow;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.services-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.help-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+list-style-type: none;
+margin-bottom: 0px;
+}
+
+/* .help-grid details:open {
+    align-items: start;
+
+}
+
+.help-grid details:open p {
+    margin-bottom: 1em;
+}
+
+.help-grid details:open li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+} */
+
+#third-dropdown::before {
+    margin-top: -50px;
+
+}
+
+.tutoring-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 1em;
+}
+
+button {
+    background-color: #00274c;
+    border: 1px #FFCB05 solid;
+    color: white;
+    height: 4em;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FFCB05;
+    border: 1px #00274c solid;
+    color: black;
+}
+
+.tutoring-faqs {
+    display:grid;
+    width: 100% ;
+    grid-template-columns: 50% 50%;
+    column-gap: 1em;
+}
+
+.tutoring-faqs>details>p
+{ font-size: .8rem;
+    overflow: auto;
+}
+
+@media (prefers-reduced-motion) {
+    .parallax {
+        background-image: none; 
+        background-color: whitesmoke;
+    }
+}

@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAPS</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="parallax">
 
     <header>
-            <a href="#maincontent">Skip to Main Content</a>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
+            <img  src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
-            <ul>
+            <ul class ="top-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tutoring.html">Tutoring</a></li>
                 <li><a href="CAPS.html">CAPS</a></li>
-                <li><a href="food.html">Food Pantry</a></li>
+                <li><a href="food.html">Pantry</a></li>
             </ul>
         </nav>
         <h1>Welcome to Counseling and Psychological Services (CAPS)
         </h1>
-        <img src="images/christina-wocintechchat-com-rCyiK4_aaWw-unsplash.jpg" alt="A therapist talks to a patient on a sofa."> <!--Image taken from: https://unsplash.com/photos/shallow-focus-photo-of-woman-in-beige-open-cardigan-rCyiK4_aaWw-->
+        <img class="hero-image" src="images/christina-wocintechchat-com-rCyiK4_aaWw-unsplash.jpg" alt="A therapist talks to a patient on a sofa."> <!--Image taken from: https://unsplash.com/photos/shallow-focus-photo-of-woman-in-beige-open-cardigan-rCyiK4_aaWw-->
     </header>
     <main id="maincontent">
-        <div>
-            <p><a href="https://caps.umich.edu/article/scheduling-appointment">Make an Appointment</a></p>
-            <p><a href = "https://caps.umich.edu/article/urgent-support">Urgent Support</a></p>
+        <div class="urgent-buttons">
+            <a href="https://caps.umich.edu/article/scheduling-appointment"><button>Make an Appointment</button></a>
+            <a href = "https://caps.umich.edu/article/urgent-support"><button>Urgent Support</button></a>
         </div>
         <section><div>
             <p>University Health & Counseling (UHC) supports the health and well-being of the campus community. We are inspired to help students realize their potential, cope with the stresses of life, work productively, and connect meaningfully with others.</p><br>
@@ -42,8 +47,8 @@
                 
                 <p>The CAPS office is unable to participate in scavenger hunts for students due to maintaining the confidentiality of our clients. However, you are welcome to direct students to the wellness zone, which has a separate entrance adjacent to CAPS. If you have any questions, please feel free to contact us.</p><br>
 
-        </div></section> 
-        <section><div>
+        </div></section>
+        <section class="resource-grid"><div id="resource-grid-header">
             <h2>Resources</h2>
         </div>
         <div>
@@ -121,8 +126,7 @@
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-    </footer>
-    
+    </footer>  
 </body>
 
 </html>
