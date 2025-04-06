@@ -14,24 +14,26 @@
 <body class="parallax">
 
     <header>
+<div class="header-canvas">
   <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img id="umsiLogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul class="top-bar">
-                <li><a href="index.html">Home</a></li>
+                <li><a id="current" href="index.html">Home</a></li>
                 <li><a href="tutoring.html">Tutoring</a></li>
                 <li><a href="CAPS.html">CAPS</a></li>
                 <li><a href="food.html">Pantry</a></li>
             </ul>
+</div>
         </nav>
-        <h1>Student Success Portal</h1>
+        <h1 class = "welcome-line">Student Success Portal</h1>
 
     </header>
     <main id="maincontent">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
-            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <p>This guide is set up to help you be successful inside and outside of the classroom and we have included the following resources throughout our site:</p>
             <ol>
                 <li>Academic Resources</li>
                 <li>Physical Health</li>
@@ -104,7 +106,12 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <footer>
+            <p>UMSI Student Success Portal | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+            <p> © Copyrights <span id="year"></span> by The University of Michigan. All rights reserved.</p>
+            <!-- Copyright item and the javascript code for date-updating footer both come from CodexWorld at https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
         </footer>
+        <script> document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
 </body>
 </html>

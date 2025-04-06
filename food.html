@@ -13,17 +13,19 @@
 <body class="parallax">
 
     <header>
+    <div class="header-canvas">
         <div class="skip"><a href="#maincontent">Skip to Main Content</a></div>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <img id="umsiLogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul class ="top-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tutoring.html">Tutoring</a></li>
                 <li><a href="CAPS.html">CAPS</a></li>
-                <li><a href="food.html">Pantry</a></li>
+                <li><a id="current" href="food.html">Pantry</a></li>
             </ul>
+        </div>
         </nav>
-        <h1>Welcome to Maize & Blue Cupboard</h1>
+        <h1 class="welcome-line">Welcome to Maize & Blue Cupboard</h1>
     </header>
     <main id="maincontent">
         <section>
@@ -196,9 +198,13 @@
     </p>
     <p><a href="https://mbc.studentlife.umich.edu/contact/">Contact Us</a></p> </section>
 </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-    </footer>
+<footer>
+    <p>Maize & Blue Cupboard|<a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2023-10">Make An Appointment</a></p>
+    <p> © Copyrights <span id="year"></span> by The University of Michigan. All rights reserved.</p>
+    <!-- Copyright item and the javascript code for date-updating footer both come from CodexWorld at https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+</footer>
+<script> document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 
 </html>

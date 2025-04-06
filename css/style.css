@@ -2,16 +2,9 @@
 body {
     font-family: Montserrat, sans-serif;
     margin: 5px;
+    background-color: whitesmoke;
 
-}
 
-.parallax {
-    background-image: url("../images/umsi_campus_sculpture_and_union_mobile.png");
-    background-size: cover;
-    background-position-x: -150px;
-    background-repeat: no-repeat;
-    backdrop-filter: grayscale(40%) blur(20px) brightness(145%);
-    background-attachment: fixed;
 }
 
 main {
@@ -104,7 +97,6 @@ li {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 1em;
 
 }
 
@@ -120,15 +112,17 @@ li {
     position: sticky;
     top: 1em;
     margin: 2em;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .resource-grid {
  display: grid;
  grid-template-columns: 50% 50%;
  column-gap: 10%;
-    row-gap: 1em;
- align-items: start;}
+row-gap: 1em;
+ align-items: start;
+}
+ 
 
 .resource-grid div {
 padding-bottom: 0px; 
@@ -150,14 +144,17 @@ margin-bottom: 0px;}
 
 .resource-grid div:last-child {
     grid-column: 1/-1;
+    justify-items: start;
+    color: black
 
 }
 
 #resource-grid-header{
     grid-column: 1/span 2;
-    justify-items: center;
+    justify-items: start;
     margin-bottom: 0px;
 }
+
 
 header > img {
 width: 100%;
@@ -178,16 +175,18 @@ footer {
     background-color: #00274c;
     color: white;
     height: 3em;
-    padding: 1em;
+    padding: 3em;
     align-content: center;
     align-items: center;
     justify-content: center;
-    justify-content: center;
-    padding-top: 1em; }
+    justify-items: center;
+    border-top: #00274C solid 5px;}
 
 footer a {
     color: yellow;
 }
+
+
 
 .services-grid {
     display: grid;
@@ -208,19 +207,6 @@ list-style-type: none;
 margin-bottom: 0px;
 }
 
-/* .help-grid details:open {
-    align-items: start;
-
-}
-
-.help-grid details:open p {
-    margin-bottom: 1em;
-}
-
-.help-grid details:open li {
-    margin-top: .5em;
-    margin-bottom: .5em;
-} */
 
 #third-dropdown::before {
     margin-top: -50px;
@@ -231,8 +217,7 @@ margin-bottom: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 1em;
-}
+    column-gap: 1em; }
 
 button {
     background-color: #00274c;
@@ -255,7 +240,7 @@ button:hover {
 .tutoring-faqs {
     display:grid;
     width: 100% ;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1em;
 }
 
@@ -264,9 +249,228 @@ button:hover {
     overflow: auto;
 }
 
-@media (prefers-reduced-motion) {
-    .parallax {
-        background-image: none; 
-        background-color: whitesmoke;
+#current {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+#errorpage > img {
+    display: none;
+
+}
+
+
+@media screen and (min-width: 900px) {
+#umsiLogo {
+    width: 20%;
+}
+
+main {
+    padding: 2em;
+    margin: 1em;
+    font-size: large;
+}
+
+h1 {font-size: 4rem;}
+
+h2{
+    font-size: 2.5rem;
+}
+
+img {
+    width: 50%;
+}
+
+.top-bar { 
+    height: 3em;
+}
+
+section > ol
+{display: inline-block;
+color: black;
+padding: 1em;
+background-color: #FFCB05;
+margin-left: 2em;
+padding-left: 2em;
+}
+
+
+/* Come back to this */
+section ol > li {
+    color: white;
+    background-color: #00274c;
+    padding: .5rem;
+    padding-left: 0px;
+    margin-left: 0px;
+
+}
+
+section ol > li::before {
+    font-weight: bold;
+    color: black;
+
+}
+
+.urgent-buttons {
+justify-items: center;
+display: block;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+       row-gap: 1em;
+    align-items: start;}
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
+    
+    .services-grid img { height:300px;}
+
+    .hero-image {
+        width: 50%;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .welcome-line {
+        background-color: #FFCB05;
+        margin-top: 0px;
+        margin-bottom: .5em;
+        padding: 1em;
+    }
+
+    .header-canvas {background-image: url("../images/strolling_students.jpg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position: 10%;
+    
+    }
+
+    #umsi_tutoring_intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    #umsi_tutoring_intro > h2 {
+        grid-column:1/3;
+        grid-row: 1/1;
+    }
+
+    #umsi_tutoring_intro > img {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        width: 100%;
+    }
+
+    .tutoring_right_half {
+        grid-column: 2/3;
+    grid-row: 2/4;
+    }
+
+    .tutoring_left_half {
+        grid-column: 1/2;
+        grid-row: 2/4;
+
+    }
+
+    #umsi_peer_tutoring {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 80% 10%;
+        row-gap: 2em;
+        margin-bottom: -25%;
+        column-gap: 2em;
+
+    }
+
+    #umsi_peer_tutoring > h2{
+        grid-column: 1/-1;
+        margin-bottom: 6em ;
+
+    }
+
+    #umsi_peer_tutoring > img {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        width: 100%;
+    }
+
+    .tutoring-grid {
+        display: inline-block;
+    }
+
+    #errorpage {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #errortext {
+        grid-column: 1/2;
+        align-content: stretch;
+        justify-items: center;
+    }
+    #errortext h1, p, a, button {
+        align-items: space-evenly;
+    }
+    #errorpage > img {
+        display:revert;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 80%;
+}
+
+.urgent-buttons {
+    display: inline-flex;
+    justify-self: center;
+    position: sticky;
+    top: 1em;
+    margin: 2em;
+    background-color: white;
+}
+
+#information-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 45%;
+    grid-template-rows: 90% 1fr;
+    column-gap: 1em;
+    row-gap: .5em;
+
+}
+
+#information-section > div:first-child() {
+    grid-row: 1/2;
+
+}
+
+#information-section > div:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+#information-section > div > img {
+    width: 100%;
+    align-content: end;
+    align-items: end;
+    grid-column: 3/4;
+
+}
+
+#map-link {
+    grid-row: 2/3;
+    grid-column: 3/4;
+
+}
+
+.hero-image {
+    width: 80%;
+}
+
 }
