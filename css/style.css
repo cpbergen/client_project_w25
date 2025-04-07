@@ -374,7 +374,8 @@ display: block;
         grid-template-rows: 1fr;
     }
     
-    .services-grid img { height:300px;}
+
+    .services-grid img { min-height: 210px;}
 
     .hero-image {
         width: 50%;
@@ -516,7 +517,22 @@ display: block;
 }
 
 .hero-image {
-    width: 80%;
+    width: 50%;
+}
+
+#maizeandblue-location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+#maizeandblue-location > article:first-child {
+    grid-column: 1/2;
+}
+
+#maizeandblue-location > article:last-child {
+    grid-column: 2/3;
+}
 }
 
 }
