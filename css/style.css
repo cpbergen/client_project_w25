@@ -260,7 +260,7 @@ button:hover {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 750px) {
 #umsiLogo {
     width: 20%;
 }
@@ -375,7 +375,7 @@ display: block;
     }
     
 
-    .services-grid img { min-height: 210px;}
+    .services-grid img { min-height: 185px;}
 
     .hero-image {
         width: 50%;
